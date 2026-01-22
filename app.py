@@ -196,3 +196,24 @@ st.markdown(
     """, 
     unsafe_allow_html=True
 )
+
+st.markdown("""
+<style>
+    /* 隐藏右上角的 Deploy 按钮 */
+    .stDeployButton {
+        display: none;
+    }
+    /* 隐藏右上角的三点菜单 (汉堡菜单) */
+    #MainMenu {
+        visibility: hidden;
+    }
+    /* 隐藏底部的 "Made with Streamlit" */
+    footer {
+        visibility: hidden;
+    }
+    /* 隐藏顶部的彩色条 */
+    header {
+        visibility: hidden;
+    }
+</style>
+""", unsafe_allow_html=True)
