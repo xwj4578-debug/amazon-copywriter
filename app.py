@@ -224,17 +224,19 @@ st.markdown("""
     .stDeployButton {
         display: none;
     }
-    /* 隐藏右上角的三点菜单 (汉堡菜单) */
-    #MainMenu {
-        visibility: hidden;
-    }
     /* 隐藏底部的 "Made with Streamlit" */
     footer {
         visibility: hidden;
     }
-    /* 隐藏顶部的彩色条 */
+    /* 保留顶部导航栏，确保汉堡菜单可见 */
+    /* 只隐藏顶部的彩色条，保留导航栏功能 */
     header {
-        visibility: hidden;
+        visibility: visible;
+    }
+    /* 调整顶部导航栏样式，移除彩色条 */
+    .stAppHeader {
+        background-color: transparent !important;
+        border-bottom: none !important;
     }
 </style>
 """, unsafe_allow_html=True)
