@@ -1,0 +1,18 @@
+[theme]
+  primaryColor = "#F63946"
+  backgroundColor = "#FFFFFF"
+  secondaryBackgroundColor = "#F7F7F7"
+  textColor = "#000000"
+  font = "sans serif"
+
+[server]
+  headless = true
+  enableCORS = false
+
+[layout]
+  initial_sidebar_state = "expanded"
+  sidebar_width = "300px"
+
+[global]
+  min_width = 400
+  min_height = 500
